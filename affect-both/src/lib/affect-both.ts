@@ -1,3 +1,3 @@
 export function affectBoth(): string {
-    return 'affect-both';
+  return 'affect-both v4';
 }

@@ -50,5 +50,16 @@
         "^production"
       ]
     }
+  },
+  "release": {
+    "projectsRelationship": "independent",
+    "version": {
+      "conventionalCommits": true
+    },
+    "conventionalCommits": {},
+    "projects": [
+      "api-one",
+      "api-two"
+    ]
   }
 }
