@@ -54,7 +54,11 @@
   "release": {
     "projectsRelationship": "independent",
     "version": {
-      "conventionalCommits": true
+      "conventionalCommits": true,
+      "git": {
+        "commit": false,
+        "tag": true
+      }
     },
     "conventionalCommits": {},
     "projects": [
