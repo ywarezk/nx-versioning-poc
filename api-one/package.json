@@ -2,7 +2,9 @@
   "name": "@alison/api-one",
   "version": "0.0.1",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@alison/affect-both": "workspace:*"
+  },
   "nx": {
     "targets": {
       "build": {
