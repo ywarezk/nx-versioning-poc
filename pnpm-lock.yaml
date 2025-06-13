@@ -42,7 +42,15 @@ importers:
         specifier: ~5.8.2
         version: 5.8.3
 
+  affect-both:
+    dependencies:
+      tslib:
+        specifier: ^2.3.0
+        version: 2.8.1
+
   api-one: {}
+
+  api-two: {}
 
 packages:
 
