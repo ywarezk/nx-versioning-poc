@@ -1,0 +1,66 @@
+{
+  "name": "@./api-one",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "targets": {
+      "build": {
+        "executor": "@nx/esbuild:esbuild",
+        "outputs": [
+          "{options.outputPath}"
+        ],
+        "defaultConfiguration": "production",
+        "options": {
+          "platform": "node",
+          "outputPath": "api-one/dist",
+          "format": [
+            "cjs"
+          ],
+          "bundle": false,
+          "main": "api-one/src/main.ts",
+          "tsConfig": "api-one/tsconfig.app.json",
+          "assets": [
+            "api-one/src/assets"
+          ],
+          "esbuildOptions": {
+            "sourcemap": true,
+            "outExtension": {
+              ".js": ".js"
+            }
+          }
+        },
+        "configurations": {
+          "development": {},
+          "production": {
+            "esbuildOptions": {
+              "sourcemap": false,
+              "outExtension": {
+                ".js": ".js"
+              }
+            }
+          }
+        }
+      },
+      "serve": {
+        "continuous": true,
+        "executor": "@nx/js:node",
+        "defaultConfiguration": "development",
+        "dependsOn": [
+          "build"
+        ],
+        "options": {
+          "buildTarget": "@./api-one:build",
+          "runBuildTargetDependencies": false
+        },
+        "configurations": {
+          "development": {
+            "buildTarget": "@./api-one:build:development"
+          },
+          "production": {
+            "buildTarget": "@./api-one:build:production"
+          }
+        }
+      }
+    }
+  }
+}
