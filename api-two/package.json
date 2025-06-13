@@ -1,5 +1,5 @@
 {
-  "name": "@./api-two",
+  "name": "@alison/api-two",
   "version": "0.0.1",
   "private": true,
   "nx": {
@@ -49,15 +49,15 @@
           "build"
         ],
         "options": {
-          "buildTarget": "@./api-two:build",
+          "buildTarget": "@alison/api-two:build",
           "runBuildTargetDependencies": false
         },
         "configurations": {
           "development": {
-            "buildTarget": "@./api-two:build:development"
+            "buildTarget": "@alison/api-two:build:development"
           },
           "production": {
-            "buildTarget": "@./api-two:build:production"
+            "buildTarget": "@alison/api-two:build:production"
           }
         }
       }

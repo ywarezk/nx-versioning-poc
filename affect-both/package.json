@@ -1,5 +1,5 @@
 {
-  "name": "@./affect-both",
+  "name": "@alison/affect-both",
   "version": "0.0.1",
   "private": true,
   "main": "./dist/index.js",

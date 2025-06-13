@@ -1,5 +1,5 @@
 {
-  "name": "@./poc-nx-versioning/source",
+  "name": "@alison/poc-nx-versioning",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {},
