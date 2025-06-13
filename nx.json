@@ -52,6 +52,14 @@
     }
   },
   "release": {
-    "projectsRelationship": "independent"
+    "projectsRelationship": "independent",
+    "version": {
+      "conventionalCommits": true
+    },
+    "conventionalCommits": {},
+    "projects": [
+      "api-one",
+      "api-two"
+    ]
   }
 }
