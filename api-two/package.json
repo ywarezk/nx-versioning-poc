@@ -1,0 +1,66 @@
+{
+  "name": "@./api-two",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "targets": {
+      "build": {
+        "executor": "@nx/esbuild:esbuild",
+        "outputs": [
+          "{options.outputPath}"
+        ],
+        "defaultConfiguration": "production",
+        "options": {
+          "platform": "node",
+          "outputPath": "api-two/dist",
+          "format": [
+            "cjs"
+          ],
+          "bundle": false,
+          "main": "api-two/src/main.ts",
+          "tsConfig": "api-two/tsconfig.app.json",
+          "assets": [
+            "api-two/src/assets"
+          ],
+          "esbuildOptions": {
+            "sourcemap": true,
+            "outExtension": {
+              ".js": ".js"
+            }
+          }
+        },
+        "configurations": {
+          "development": {},
+          "production": {
+            "esbuildOptions": {
+              "sourcemap": false,
+              "outExtension": {
+                ".js": ".js"
+              }
+            }
+          }
+        }
+      },
+      "serve": {
+        "continuous": true,
+        "executor": "@nx/js:node",
+        "defaultConfiguration": "development",
+        "dependsOn": [
+          "build"
+        ],
+        "options": {
+          "buildTarget": "@./api-two:build",
+          "runBuildTargetDependencies": false
+        },
+        "configurations": {
+          "development": {
+            "buildTarget": "@./api-two:build:development"
+          },
+          "production": {
+            "buildTarget": "@./api-two:build:production"
+          }
+        }
+      }
+    }
+  }
+}
