@@ -59,6 +59,9 @@ importers:
       '@alison/affect-both':
         specifier: workspace:*
         version: link:../affect-both
+      '@alison/affect-one':
+        specifier: workspace:*
+        version: link:../affect-one
 
   api-two:
     dependencies:

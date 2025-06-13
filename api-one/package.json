@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@alison/affect-both": "workspace:*"
+    "@alison/affect-both": "workspace:*",
+    "@alison/affect-one": "workspace:*"
   },
   "nx": {
     "targets": {
