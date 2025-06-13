@@ -54,6 +54,7 @@
   "release": {
     "projectsRelationship": "independent",
     "version": {
+      "updateDependents": "auto",
       "conventionalCommits": true,
       "git": {
         "commit": false,
@@ -63,7 +64,9 @@
     "conventionalCommits": {},
     "projects": [
       "api-one",
-      "api-two"
+      "api-two",
+      "affect-one",
+      "affect-both"
     ]
   }
 }
