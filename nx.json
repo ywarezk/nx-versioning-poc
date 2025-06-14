@@ -49,30 +49,17 @@
   },
   "release": {
     "projectsRelationship": "independent",
-    "groups": {
-      "libs": {
-        "projects": "libs/*",
-        "version": {
-          "fallbackCurrentVersionResolver": "disk",
-          "updateDependents": "auto",
-          "conventionalCommits": true,
-          "git": {
-            "commit": false,
-            "tag": false
-          }
-        }
+    "version": {
+      "conventionalCommits": true,
+      "currentVersionResolver": "git-tag",
+      "git": {
+        "commit": false,
+        "tag": true
       },
-      "apps": {
-        "projects": "apps/*",
-        "version": {
-          "updateDependents": "auto",
-          "conventionalCommits": true,
-          "git": {
-            "commit": true,
-            "tag": true
-          }
-        }
-      }
-    }
+      "updateDependents": "auto"
+    },
+    "projects": [
+      "apps/*"
+    ]
   }
 }
