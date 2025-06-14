@@ -53,6 +53,19 @@
   },
   "release": {
     "projectsRelationship": "independent",
+    "groups": {
+      "libs": {
+        "projects": [
+          "libs/*"
+        ],
+        "version": {
+          "git": {
+            "commit": false,
+            "tag": false
+          }
+        }
+      }
+    },
     "version": {
       "updateDependents": "auto",
       "conventionalCommits": true,
