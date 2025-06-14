@@ -15,16 +15,13 @@
         "defaultConfiguration": "production",
         "options": {
           "platform": "node",
-          "outputPath": "api-two/dist",
+          "outputPath": "apps/api-two/dist",
           "format": [
             "cjs"
           ],
           "bundle": false,
-          "main": "api-two/src/main.ts",
-          "tsConfig": "api-two/tsconfig.app.json",
-          "assets": [
-            "api-two/src/assets"
-          ],
+          "main": "apps/api-two/src/main.ts",
+          "tsConfig": "apps/api-two/tsconfig.json",
           "esbuildOptions": {
             "sourcemap": true,
             "outExtension": {

@@ -16,18 +16,14 @@
         "defaultConfiguration": "production",
         "options": {
           "platform": "node",
-          "outputPath": "api-one/dist",
+          "outputPath": "apps/api-one/dist",
           "format": [
             "cjs"
           ],
-          "bundle": false,
-          "main": "api-one/src/main.ts",
-          "tsConfig": "api-one/tsconfig.app.json",
-          "assets": [
-            "api-one/src/assets"
-          ],
+          "bundle": true,
+          "main": "apps/api-one/src/main.ts",
+          "tsConfig": "apps/api-one/tsconfig.json",
           "esbuildOptions": {
-            "sourcemap": true,
             "outExtension": {
               ".js": ".js"
             }
@@ -37,7 +33,6 @@
           "development": {},
           "production": {
             "esbuildOptions": {
-              "sourcemap": false,
               "outExtension": {
                 ".js": ".js"
               }

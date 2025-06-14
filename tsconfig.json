@@ -4,16 +4,16 @@
   "files": [],
   "references": [
     {
-      "path": "./api-one"
+      "path": "./libs/affect-both"
     },
     {
-      "path": "./api-two"
+      "path": "./libs/affect-one"
     },
     {
-      "path": "./affect-both"
+      "path": "./apps/api-one"
     },
     {
-      "path": "./affect-one"
+      "path": "./apps/api-two"
     }
   ]
 }
