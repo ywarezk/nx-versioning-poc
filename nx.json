@@ -49,9 +49,17 @@
   },
   "release": {
     "projectsRelationship": "independent",
+    "conventionalCommits": {
+      "types": {
+        "feat": true,
+        "fix": true
+      }
+    },
+    "git": {
+      "tag": true
+    },
     "version": {
       "conventionalCommits": true,
-      "currentVersionResolver": "git-tag",
       "git": {
         "commit": false,
         "tag": true
