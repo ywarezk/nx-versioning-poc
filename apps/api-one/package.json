@@ -1,6 +1,6 @@
 {
   "name": "@alison/api-one",
-  "version": "0.0.1",
+  "version": "0.0.0-PLACEHOLDER",
   "private": true,
   "dependencies": {
     "@alison/affect-both": "workspace:*",
