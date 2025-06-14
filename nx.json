@@ -52,7 +52,6 @@
     }
   },
   "release": {
-    "groups": {},
     "projectsRelationship": "independent",
     "version": {
       "updateDependents": "auto",
@@ -62,6 +61,9 @@
         "tag": true
       }
     },
-    "conventionalCommits": {}
+    "conventionalCommits": {},
+    "projects": [
+      "apps/*"
+    ]
   }
 }
