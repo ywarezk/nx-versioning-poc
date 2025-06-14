@@ -52,6 +52,7 @@
     }
   },
   "release": {
+    "groups": {},
     "projectsRelationship": "independent",
     "version": {
       "updateDependents": "auto",
@@ -61,12 +62,6 @@
         "tag": true
       }
     },
-    "conventionalCommits": {},
-    "projects": [
-      "api-one",
-      "api-two",
-      "affect-one",
-      "affect-both"
-    ]
+    "conventionalCommits": {}
   }
 }
