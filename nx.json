@@ -55,28 +55,27 @@
     "projectsRelationship": "independent",
     "groups": {
       "libs": {
-        "projects": [
-          "libs/*"
-        ],
+        "projects": "libs/*",
         "version": {
+          "updateDependents": "auto",
+          "conventionalCommits": true,
           "git": {
             "commit": false,
             "tag": false
           }
         }
+      },
+      "apps": {
+        "projects": "apps/*",
+        "version": {
+          "updateDependents": "auto",
+          "conventionalCommits": true,
+          "git": {
+            "commit": false,
+            "tag": true
+          }
+        }
       }
-    },
-    "version": {
-      "updateDependents": "auto",
-      "conventionalCommits": true,
-      "git": {
-        "commit": false,
-        "tag": true
-      }
-    },
-    "projects": [
-      "apps/*",
-      "libs/*"
-    ]
+    }
   }
 }
