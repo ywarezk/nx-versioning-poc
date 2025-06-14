@@ -55,9 +55,6 @@
         "fix": true
       }
     },
-    "git": {
-      "tag": true
-    },
     "version": {
       "conventionalCommits": true,
       "git": {
