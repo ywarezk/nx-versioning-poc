@@ -4,4 +4,4 @@ import {affectOne} from '@alison/affect-one';
 affectBoth();
 affectOne();
 
-console.log('Hello World2');
+console.log('Hello World3');
