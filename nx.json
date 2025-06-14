@@ -57,6 +57,7 @@
       "libs": {
         "projects": "libs/*",
         "version": {
+          "fallbackCurrentVersionResolver": "disk",
           "updateDependents": "auto",
           "conventionalCommits": true,
           "git": {
