@@ -72,7 +72,7 @@
           "updateDependents": "auto",
           "conventionalCommits": true,
           "git": {
-            "commit": false,
+            "commit": true,
             "tag": true
           }
         }
