@@ -1,3 +1,3 @@
 export function affectBoth(): string {
-  return 'affect-both v4 patch bump 2';
+  return 'affect-both v4 patch bump 3';
 }
